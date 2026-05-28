@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--ink:#0d1117;--cream:#f7f3ed;--gold:#b8924a;--gold-light:#d4a85a;--muted:#6b7280;--border:rgba(184,146,74,0.2);--surface:#ffffff;--dark:#141820;--accent-bg:#f0ebe2}
+:root{--ink:#0f1f3d;--cream:#f7f3ed;--gold:#b8924a;--gold-light:#d4a85a;--muted:#5a6478;--border:rgba(184,146,74,0.22);--surface:#ffffff;--dark:#0d1e3a;--accent-bg:#f0ebe2}
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;font-size:16px;line-height:1.6}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(247,243,237,0.93);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s}
@@ -87,8 +87,8 @@ section{position:relative}
 .case-content{padding:3.5rem 4rem;display:flex;flex-direction:column;justify-content:center}
 .case-visual{position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;justify-content:center}
 .case-visual-inner{width:100%;height:100%;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem}
-.case-visual.mcgowans{background:#1a1410}
-.case-visual.mcgowans::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,74,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,74,0.06) 1px,transparent 1px);background-size:40px 40px}
+.case-visual.mcgowans{background:#0a1628}
+.case-visual.mcgowans::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,74,0.09) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,74,0.09) 1px,transparent 1px);background-size:40px 40px}
 .big-stat-block{position:relative;z-index:2;text-align:center}
 .big-stat{font-family:'Cormorant Garamond',serif;font-size:7rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:0.2rem}
 .big-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(247,243,237,0.5)}
@@ -96,16 +96,16 @@ section{position:relative}
 .sub-stat{text-align:center}
 .sub-stat .val{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:rgba(247,243,237,0.85);line-height:1}
 .sub-stat .lbl{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(247,243,237,0.35);margin-top:0.25rem}
-.case-visual.hybrid{background:#0f1e22}
-.case-visual.hybrid::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 70%,rgba(36,130,120,0.2),transparent 65%),radial-gradient(ellipse at 80% 20%,rgba(184,146,74,0.1),transparent 50%)}
+.case-visual.hybrid{background:#0a1628}
+.case-visual.hybrid::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 70%,rgba(184,146,74,0.15),transparent 65%),radial-gradient(ellipse at 80% 20%,rgba(100,160,220,0.1),transparent 50%)}
 .transform-diagram{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1rem;width:85%}
 .td-label{font-size:0.62rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(247,243,237,0.3);align-self:flex-start}
 .td-pill{width:100%;padding:1rem 1.5rem;border-radius:4px;font-size:0.8rem;font-weight:400;line-height:1.5}
 .td-pill.before{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(247,243,237,0.45)}
 .td-pill.after{background:rgba(184,146,74,0.14);border:1px solid rgba(184,146,74,0.4);color:var(--cream)}
 .td-arrow{font-size:1.6rem;color:var(--gold)}
-.case-visual.bright{background:#0d1730}
-.case-visual.bright::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(59,100,220,0.18),transparent 55%),radial-gradient(ellipse at 20% 80%,rgba(184,146,74,0.1),transparent 50%)}
+.case-visual.bright{background:#0a1628}
+.case-visual.bright::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(80,120,220,0.2),transparent 55%),radial-gradient(ellipse at 20% 80%,rgba(184,146,74,0.12),transparent 50%)}
 .bright-tiles{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:1rem;width:100%;max-width:290px}
 .bt{padding:1.3rem;border-radius:4px;text-align:center;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)}
 .bt-icon{font-size:1.4rem;margin-bottom:0.5rem}
@@ -140,6 +140,8 @@ section{position:relative}
 .v-hl{font-size:0.77rem;color:rgba(247,243,237,0.42);padding:0.32rem 0 0.32rem 0.9rem;border-top:1px solid rgba(184,146,74,0.1);position:relative}
 .v-hl::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:3px;height:3px;border-radius:50%;background:var(--gold)}
 .diffpix-img{width:75%;max-width:150px;opacity:0.65;border-radius:3px;margin-top:1.2rem}
+.timeline-logo{height:28px;width:auto;max-width:120px;object-fit:contain;margin-bottom:0.5rem;opacity:0.7;filter:brightness(0) invert(1);display:block}
+.case-logo{height:36px;width:auto;max-width:160px;object-fit:contain;margin-bottom:1.2rem;opacity:0.85;display:block}
 #writing{padding:8rem 0;background:var(--accent-bg)}
 .writing-intro{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;font-style:italic;color:var(--muted);max-width:680px;line-height:1.65;margin-bottom:3rem}
 .writing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:2.5rem}
@@ -198,6 +200,15 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
   footer{flex-direction:column;gap:0.5rem;padding:1.5rem 2rem;text-align:center}
 }
 @media(max-width:580px){.writing-grid,.edu-grid,.versatility-grid{grid-template-columns:1fr}}
+
+.timeline-logo{height:26px;width:auto;max-width:130px;object-fit:contain;margin-bottom:0.55rem;opacity:0.55;filter:brightness(0) invert(1);display:block}
+.case-logo{height:34px;width:auto;max-width:150px;object-fit:contain;margin-bottom:1rem;display:block;opacity:0.88}
+.case-logo-dark{filter:brightness(0) invert(1);opacity:0.7}
+.film-collage{display:flex;gap:0.6rem;margin-top:1.2rem;flex-wrap:wrap}
+.film-collage img{height:80px;width:auto;border-radius:3px;object-fit:cover;opacity:0.72;flex:1;min-width:80px;max-width:130px}
+.v-card-film-bg{position:relative;overflow:hidden}
+.v-card-film-bg::before{content:'';position:absolute;inset:0;background-image:url('tom_cruise_event.JPG');background-size:cover;background-position:center top;opacity:0.12;z-index:0}
+.v-card-film-bg>*{position:relative;z-index:1}
 </style>
 </head>
 <body>
@@ -218,7 +229,7 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
   <div class="hero-left">
     <p class="hero-eyebrow">AI Strategy · Brand &amp; Digital Transformation · B2B · SaaS · Consulting</p>
     <h1 class="hero-name">Nicola<br><em>Costello</em></h1>
-    <p class="hero-tagline">Marketing &amp; Communications Leader helping organisations grow through strategic brand narratives, AI-led positioning and data-driven digital transformation — from SaaS to film to education.</p>
+    <p class="hero-tagline">Marketing &amp; Communications Leader helping organisations grow through strategic brand narratives, AI-led positioning and data-driven digital transformation, spanning SaaS, film and education.</p>
     <div class="hero-pills">
       <span class="hero-pill">AI Communications Strategy</span>
       <span class="hero-pill">Brand &amp; Digital Transformation</span>
@@ -227,15 +238,15 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       <span class="hero-pill">Go-To-Market Leadership</span>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-number">32</div><div class="stat-label">Years in Marketing</div></div>
+      <div><div class="stat-number">25<span style="font-size:1.8rem">+</span></div><div class="stat-label">Years in Marketing</div></div>
       <div class="stat-divider"></div>
       <div><div class="stat-number">86%</div><div class="stat-label">SEO Growth Delivered</div></div>
       <div class="stat-divider"></div>
-      <div><div class="stat-number">4</div><div class="stat-label">Industries Mastered</div></div>
+      <div><div class="stat-number">5<span style="font-size:1.8rem">+</span></div><div class="stat-label">Industries Mastered</div></div>
     </div>
   </div>
   <div class="hero-right">
-    <img src="NicolaCostelloMcD_copy.JPG" alt="Nicola Costello" class="hero-photo">
+    <img src="headshot_square.jpeg" alt="Nicola Costello" class="hero-photo">
     <div class="hero-badge"><span>Dublin</span>Ireland · Remote-Ready</div>
   </div>
 </section>
@@ -250,9 +261,9 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
     <div class="about-grid">
       <div class="reveal">
         <p class="about-intro">A marketing leader who works at the intersection of <em>strategy, storytelling</em> and performance across SaaS, film, education and commercial services.</p>
-        <p class="about-body">I am a Marketing &amp; Communications Leader with over 32 years of experience helping organisations grow through clear positioning, compelling content and data-led marketing. Currently consulting across B2B technology and commercial services, delivering measurable impact across SEO, content architecture, brand strategy and digital transformation for clients in Ireland and the UK.</p>
-        <p class="about-body">I translate complex products, technologies and brands into narratives that drive engagement, customer acquisition and commercial growth — bringing a rare combination of deep experience, modern marketing command and genuine AI communications specialism.</p>
-        <p class="about-body">I am particularly interested in how organisations communicate innovation in ways that remain human and accessible — and how AI can be positioned not as a threat, but as a tool that amplifies rather than replaces human expertise.</p>
+        <p class="about-body">I am a Marketing &amp; Communications Leader with over 25 years of experience helping organisations grow through clear positioning, compelling content and data-led marketing. Currently consulting across B2B technology and commercial services, delivering measurable impact across SEO, content architecture, brand strategy and digital transformation for clients in Ireland and the UK.</p>
+        <p class="about-body">I translate complex products, technologies and brands into narratives that drive engagement, customer acquisition and commercial growth, with a rare combination of deep experience, modern marketing command and genuine AI communications specialism.</p>
+        <p class="about-body">I am particularly interested in how organisations communicate innovation in ways that remain human and accessible, and how AI can be positioned not as a threat, but as a tool that amplifies rather than replaces human expertise.</p>
         <div class="about-philosophy">
           <div class="philosophy-item">
             <div class="philosophy-num">1</div>
@@ -284,7 +295,7 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
           <div class="expertise-tag">Film &amp; Entertainment PR</div>
         </div>
         <div class="aside-quote">
-          <p>Experience is not just about years. It is about what you do with them. Thirty-two years of continuous learning, adaptation and strategic growth — across film, education, SaaS and consulting — has made me genuinely adaptable in ways most marketers are not.</p>
+          <p>Experience is not just about years. It is about what you do with them. Over 25 years of continuous learning, adaptation and strategic growth across film, education, SaaS and consulting. That breadth has made me genuinely adaptable in ways most marketers are not.</p>
         </div>
       </div>
     </div>
@@ -301,6 +312,7 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-period">2025 – Present</div>
+        <img src="mcgowans_logo.jpg" alt="McGowans Print" class="timeline-logo" style="filter:brightness(0) invert(1);opacity:0.6">
         <div class="timeline-role">Digital Marketing &amp; Communications Consultant</div>
         <div class="timeline-org">McGowans Print · Hybrid Mail Solutions · Ireland &amp; UK</div>
         <div class="timeline-desc">Leading ongoing digital marketing, SEO strategy, content architecture and brand communications for two commercial clients. Developed strategic content architecture aligning SEO performance, technical positioning and commercial growth objectives across the McGowans Group portfolio. Delivered a full technical SEO overhaul achieving 86% organic impressions growth. Created the complete brand identity, website and content framework for Hybrid Mail Solutions from the ground up.</div>
@@ -308,16 +320,18 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       </div>
       <div class="timeline-item">
         <div class="timeline-period">Dec 2024 – Dec 2025</div>
+        <img src="brightsg_logo.jpeg" alt="Bright Software Group" class="timeline-logo" style="opacity:0.55;filter:brightness(0) invert(1)">
         <div class="timeline-role">Content &amp; Strategic Marketing Leader</div>
         <div class="timeline-org">Bright Software Group · Dublin / Hybrid · SaaS Accounting Technology · Contract</div>
-        <div class="timeline-desc">Architected a company-wide brand transformation, repositioning BrightSG as a modern, AI-forward technology partner for accountants and finance professionals. Pioneered AI communications strategy before the department formally existed, developing the narrative framework adopted across all internal teams and external communications. Led the end-to-end launch of MyWorkPapers Essential across UK, Ireland and Australia — including all product positioning, website content, campaigns, email and social media. Served as the cross-functional connector between Marketing, Product, Sales and AI teams.</div>
+        <div class="timeline-desc">Led brand transformation, repositioning BrightSG as a modern, AI-forward technology partner for accountants and finance professionals. Developed AI-focused content and communications strategy at an early stage, contributing to the narrative used across internal and external channels. Led the end-to-end launch of MyWorkPapers Essential across UK, Ireland and Australia, including all product positioning, website content, campaigns, email and social media. Served as the cross-functional connector between Marketing, Product, Sales and AI teams.</div>
         <div class="timeline-tags"><span class="timeline-tag">AI Positioning</span><span class="timeline-tag">SaaS Product Marketing</span><span class="timeline-tag">Brand Transformation</span><span class="timeline-tag">Go-To-Market</span><span class="timeline-tag">Technical Content</span></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-period">2022 – 2023</div>
+        <img src="kh_logo.png" alt="The King's Hospital School" class="timeline-logo" style="opacity:0.6;max-width:140px">
         <div class="timeline-role">Digital Marketing Specialist</div>
         <div class="timeline-org">The King's Hospital Boarding &amp; Day School · Dublin</div>
-        <div class="timeline-desc">Led full digital transformation for a 350-year-old institution, covering social media strategy, email platform migration to Mailchimp, website UX improvements and SEO-driven campaigns. Grew social following by 76% and increased applications by 89% within nine months.</div>
+        <div class="timeline-desc">Led full digital transformation for a 350-year-old institution, covering social media strategy, email platform migration to Mailchimp, website UX improvements and SEO-driven campaigns. Grew social following by 40% and drove a measurable increase in applications within nine months.</div>
         <div class="timeline-tags"><span class="timeline-tag">Digital Transformation</span><span class="timeline-tag">Social Media</span><span class="timeline-tag">Email Marketing</span><span class="timeline-tag">SEO</span></div>
       </div>
       <div class="timeline-item">
@@ -325,6 +339,11 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
         <div class="timeline-role">Freelance Marketing &amp; Publicity Consultant</div>
         <div class="timeline-org">Warner Bros · Universal · Sony · Columbia Pictures · 20th Century Fox · Dublin</div>
         <div class="timeline-desc">Spearheaded campaigns for major international studios. Led social media for Bohemian Rhapsody and The Favourite. Conceptualised and launched DIFFpix at the Dublin International Film Festival. Managed premiere events, press junkets and red carpet media coordination across Ireland.</div>
+        <div class="film-collage">
+          <img src="russell_crowe.jpeg" alt="Russell Crowe press junket">
+          <img src="daddyshome_latelate.jpg" alt="Daddy's Home 2 cast Irish media">
+          <img src="premiere_bridesmaids.jpg" alt="Bridesmaids premiere">
+        </div>
         <div class="timeline-tags"><span class="timeline-tag">Film Publicity</span><span class="timeline-tag">Event Management</span><span class="timeline-tag">Social Media</span><span class="timeline-tag">Media Relations</span></div>
       </div>
       <div class="timeline-item">
@@ -350,19 +369,32 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
 
     <div class="featured-case reveal">
       <div class="case-content">
-        <div class="case-sector">Commercial Print · SEO, Content Architecture &amp; Digital Strategy</div>
-        <h3 class="case-name">McGowans Print</h3>
+        <div class="case-sector">McGowans Group · Brand Architecture, Strategy &amp; Full Digital Build</div>
+        <img src="mcgowans_logo.jpg" alt="McGowans Group" class="case-logo">
+        <h3 class="case-name">McGowans Group</h3>
         <p class="case-challenge-label">The Challenge</p>
-        <p class="case-challenge">Increase digital visibility and organic search performance in a competitive commercial print market across Ireland and the UK, while building a content architecture to support the wider McGowans Group strategy.</p>
-        <p class="case-desc">I delivered a comprehensive technical SEO and content architecture overhaul — reviewing site structure, improving internal linking, and writing all technology and blog content. I developed a keyword and metadata strategy targeting high-value service and location searches, and provided strategic direction for the broader McGowans Group project to ensure consistency and commercial impact across the portfolio. The platform was also prepared for Phase 2 conversion optimisation and HubSpot CRM integration to enable scalable lead attribution.</p>
+        <p class="case-challenge">What began as a website refresh evolved into a full strategic repositioning — creating McGowans Group as a parent brand unifying four subsidiaries: McGowans Print, BoxJob, Hybrid Mail Solutions and Goohme (3D out of home and experiential OOH), spanning commercial print, eCommerce, hybrid mail and outdoor advertising.</p>
+        <p class="case-desc">This is an ongoing, multi-layered engagement spanning brand strategy, digital architecture and content, operating closer to embedded CMO than consulting retainer. From strategic foundations through to developer briefs and live content, every element of the Group's digital presence has been shaped, written or directed through this project.</p>
+        <p style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);margin:1.2rem 0 0.4rem">Brand &amp; Strategy</p>
+        <ul class="case-outcomes" style="margin-bottom:0.8rem">
+          <li>Full McGowans Group parent brand created: masterbrand architecture, tagline, visual system and 11 product colour ramps</li>
+          <li>Brand system delivered in four formats: interactive HTML, PowerPoint, Word style guide and CSS/SCSS design tokens</li>
+          <li>CEO presentation, C-Suite decision document and Brand Direction paper produced for board-level sign-off</li>
+          <li>Naming convention strategy developed to preserve McGowans Print SEO equity while establishing the Group wrapper</li>
+        </ul>
+        <p style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);margin:0.8rem 0 0.4rem">Website &amp; Digital Architecture</p>
+        <ul class="case-outcomes" style="margin-bottom:0.8rem">
+          <li>Full website architecture designed across 11 service lines, 3 subsidiary pages, portfolio, insights, sustainability and contact</li>
+          <li>9-section product page master template with hero, interactive calculator, FAQPage JSON-LD schema, downloads and CTA band</li>
+          <li>Three-layer search strategy: SEO, AEO via FAQPage schema, and GEO for AI search citations</li>
+          <li>Developer Guide, Site Architecture brief and 33-amendment consolidation document produced for the build team</li>
+        </ul>
+        <p style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);margin:0.8rem 0 0.4rem">Content, SEO &amp; Social</p>
         <ul class="case-outcomes">
-          <li>Developed strategic content architecture aligning SEO, technical positioning and commercial growth across the Group portfolio</li>
-          <li>Organic impressions grew from 41.8K to 77.8K — an <strong>86% increase</strong></li>
-          <li>Clicks increased by <strong>15%</strong> through targeted content improvements</li>
-          <li>Average search ranking improved from <strong>18.5 to 14</strong></li>
-          <li>Dublin clicks nearly doubled; sustained growth across Belfast and UK searches</li>
-          <li>All website technology and blog content written and structured for SEO performance</li>
-          <li>Platform prepared for Phase 2 HubSpot CRM integration and lead attribution</li>
+          <li>Organic impressions grew from 41.8K to 77.8K, an <strong>86% increase</strong>, with average ranking improving from 18.5 to 14</li>
+          <li>All blog, guide and download content written for McGowans Print and Hybrid Mail Solutions from August 2025</li>
+          <li>Interactive ROI calculator built and embedded for the Christmas Packaging &amp; POS campaign</li>
+          <li>Ongoing social media strategy, copy and content management across McGowans and HMS accounts</li>
         </ul>
         <a href="https://mcgowansprint.com" target="_blank" class="case-link-btn">Visit McGowans Print <span class="arr">&#8599;</span></a>
       </div>
@@ -377,30 +409,35 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
             <div class="sub-stat"><div class="val">18 to 14</div><div class="lbl">Avg. Rank</div></div>
             <div class="sub-stat"><div class="val">77.8K</div><div class="lbl">Impressions</div></div>
           </div>
+          <div style="margin-top:1.5rem;width:90%;position:relative;z-index:2">
+            <img src="goohme_website.png" alt="Goohme" style="width:100%;border-radius:3px;opacity:0.6;border:1px solid rgba(255,255,255,0.08);object-fit:cover;height:80px">
+          </div>
+          <div style="display:flex;gap:1rem;margin-top:0.5rem;position:relative;z-index:2;align-items:center;justify-content:center">
+            <img src="goohme_logo.png" alt="Goohme" style="height:18px;width:auto;opacity:0.45;filter:brightness(0) invert(1)">
+          </div>
         </div>
       </div>
     </div>
 
     <div class="featured-case flip reveal" style="transition-delay:0.1s">
       <div class="case-visual hybrid">
-        <div class="case-visual-inner">
-          <div class="transform-diagram">
-            <div class="td-label">Before</div>
-            <div class="td-pill before">No brand identity · fragmented messaging · weak digital presence</div>
-            <div class="td-arrow">&#8595;</div>
-            <div class="td-label">After</div>
-            <div class="td-pill after">New brand identity · clear UX · consistent voice across all channels</div>
-          </div>
+        <div class="case-visual-inner" style="padding:1.2rem;flex-direction:column;justify-content:center;gap:0.6rem">
+          <div class="td-label" style="font-size:0.6rem;font-weight:700;letter-spacing:0.18em;color:rgba(247,243,237,0.35)">BEFORE</div>
+          <img src="hms_before.png" alt="HMS website before redesign" style="width:100%;border-radius:4px;opacity:0.65;border:1px solid rgba(255,255,255,0.08);object-fit:cover;max-height:160px">
+          <div style="text-align:center;color:var(--gold);font-size:1.2rem">&#8595;</div>
+          <div class="td-label" style="font-size:0.6rem;font-weight:700;letter-spacing:0.18em;color:rgba(184,146,74,0.7)">AFTER</div>
+          <img src="hms_after.png" alt="HMS website after redesign" style="width:100%;border-radius:4px;border:1px solid rgba(184,146,74,0.35);object-fit:cover;max-height:160px">
         </div>
       </div>
       <div class="case-content">
         <div class="case-sector">Hybrid Communications · Brand Creation, Website &amp; Digital Strategy</div>
+        <img src="hms_logo.png" alt="Hybrid Mail Solutions" class="case-logo">
         <h3 class="case-name">Hybrid Mail Solutions</h3>
         <p class="case-challenge-label">The Challenge</p>
-        <p class="case-challenge">Hybrid Mail Solutions needed a complete brand identity created from the ground up — alongside a clearer digital presence and a website that properly communicated the value of its end-to-end print and post services to clients across Ireland and Northern Ireland.</p>
-        <p class="case-desc">I created the full brand identity for Hybrid Mail Solutions — developing visual direction, tone of voice, naming framework and all website content from scratch. The project included a complete information architecture redesign for clearer user journeys, new service and product messaging, and a scalable content framework to support future campaigns and business growth. Every touchpoint, from homepage to service pages, was written and structured with both audience clarity and long-term brand consistency in mind.</p>
+        <p class="case-challenge">Hybrid Mail Solutions needed a complete brand identity created from the ground up, alongside a clearer digital presence and a website that properly communicated the value of its end-to-end print and post services to clients across Ireland and Northern Ireland.</p>
+        <p class="case-desc">I created the full brand identity for Hybrid Mail Solutions, developing visual direction, tone of voice, naming framework and all website content from scratch. The project included a complete information architecture redesign for clearer user journeys, new service and product messaging, and a scalable content framework to support future campaigns and business growth. Every touchpoint, from homepage to service pages, was written and structured with both audience clarity and long-term brand consistency in mind.</p>
         <ul class="case-outcomes">
-          <li>Full brand identity created from the ground up — visual direction, tone of voice and messaging framework</li>
+          <li>Full brand identity created from the ground up: visual direction, tone of voice and messaging framework</li>
           <li>Complete website content written with new service and product messaging</li>
           <li>Site architecture redesigned for clearer, conversion-focused user journeys</li>
           <li>Consistent brand voice established across all digital touchpoints</li>
@@ -414,27 +451,28 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
     <div class="featured-case reveal" style="transition-delay:0.2s">
       <div class="case-content">
         <div class="case-sector">SaaS · AI Strategy, Product Content, Brand &amp; Go-To-Market</div>
+        <img src="brightsg_logo.jpeg" alt="Bright Software Group" class="case-logo">
         <h3 class="case-name">Bright Software Group</h3>
         <p class="case-challenge-label">The Challenge</p>
         <p class="case-challenge">Following product expansion and acquisitions, Bright needed clearer messaging to communicate its growing technology ecosystem to accountants and finance professionals, and to position itself as an AI-forward leader in a traditionally conservative professional market.</p>
-        <p class="case-desc">Over the course of the contract I architected a company-wide brand transformation and pioneered AI positioning before the department formally existed. I wrote all blog and product content for MyWorkpapers — including the complete end-to-end launch of MyWorkpapers Essential across UK, Ireland and Australia — covering product positioning, website content, campaign communications and thought leadership. I developed the AI narrative framework that was subsequently adopted across all internal teams and external communications, and served as the cross-functional connector between Marketing, Product, Sales and AI teams.</p>
+        <p class="case-desc">Over the course of the contract I played a central role in the brand transformation, repositioning BrightSG as a modern, AI-forward technology partner for a traditionally conservative professional audience. I wrote all blog and product content for MyWorkpapers, including the complete end-to-end launch of MyWorkpapers Essential across UK, Ireland and Australia, covering product positioning, website content, campaign communications and thought leadership. I worked closely with Marketing, Product, Sales and AI teams across three markets.</p>
         <ul class="case-outcomes">
           <li>Brand transformation from traditional to tech-forward, human, AI-aware identity delivered company-wide</li>
-          <li>AI narrative framework developed and adopted across all teams and markets</li>
-          <li>MyWorkpapers Essential launch written end-to-end — positioning, website, campaigns, email and social</li>
+          <li>AI-focused messaging and positioning developed for a conservative professional audience</li>
+          <li>MyWorkpapers Essential launch written end-to-end: positioning, website, campaigns, email and social</li>
           <li>Sales battle cards and messaging guides developed to support competitive positioning</li>
           <li>Partnership campaigns with CAI, Mercia and TOA consistently exceeded registration targets</li>
           <li>Technical articles published on AccountingWEB and BrightSG.com</li>
         </ul>
         <a href="https://brightsg.com" target="_blank" class="case-link-btn">Visit Bright Software Group <span class="arr">&#8599;</span></a>
       </div>
-      <div class="case-visual bright">
+      <div class="case-visual bright" style="background:#0a1628;position:relative"><div style="position:absolute;inset:0;background-image:url('bright_brand.jpg');background-size:cover;background-position:center;opacity:0.18;z-index:0"></div>
         <div class="case-visual-inner">
           <div class="bright-tiles">
-            <div class="bt hl"><div class="bt-icon">&#129302;</div><div class="bt-val">AI</div><div class="bt-lbl">Strategy Pioneer</div></div>
+            <div class="bt hl"><div class="bt-icon">&#129302;</div><div class="bt-val">AI</div><div class="bt-lbl">Content Lead</div></div>
             <div class="bt"><div class="bt-icon">&#128640;</div><div class="bt-val">3</div><div class="bt-lbl">Markets</div></div>
             <div class="bt"><div class="bt-icon">&#128221;</div><div class="bt-val">MWP</div><div class="bt-lbl">All Content Written</div></div>
-            <div class="bt hl"><div class="bt-icon">&#127919;</div><div class="bt-val">CMO</div><div class="bt-lbl">Level Impact</div></div>
+            <div class="bt hl"><div class="bt-icon">&#127775;</div><div class="bt-val">Brand</div><div class="bt-lbl">Transformation</div></div>
           </div>
         </div>
       </div>
@@ -450,28 +488,33 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       <h2 class="section-title" style="color:var(--cream)">Beyond the <em>Brief</em></h2>
       <div class="section-line"></div>
     </div>
-    <p class="versatility-intro reveal">Thirty-two years across industries gives me something most marketers do not have: the ability to bring genuinely fresh thinking to any challenge. A career that pivots is a career that learns — and one that can walk into any briefing room and find a foothold.</p>
+    <p class="versatility-intro reveal">Over 25 years across industries gives me something most marketers do not have: the ability to bring genuinely fresh thinking to any challenge. A career that pivots is a career that learns, and one that can walk into any briefing room and find a foothold.</p>
     <div class="versatility-grid">
-      <div class="v-card">
+      <div class="v-card v-card-film-bg">
         <div class="v-sector">Film &amp; Entertainment</div>
         <div class="v-title">Major Studio Campaigns</div>
-        <div class="v-desc">Twenty years delivering marketing and publicity campaigns for the world's biggest studios, managing some of the most high-profile theatrical releases in Irish cinema history. This is where I learned to work at pace, under pressure, with no second chances.</div>
+        <div class="v-desc">Two decades handling marketing and publicity for the world's biggest studios across the Irish market. Managing major theatrical releases for Warner Bros, Universal, Sony, Columbia Pictures and 20th Century Fox taught me to work fast, stay calm under pressure and deliver with no margin for error.</div>
         <div class="v-highlights">
           <div class="v-hl">Columbia Pictures, 20th Century Fox, Universal, Warner Bros, Sony</div>
-          <div class="v-hl">Social media lead — Bohemian Rhapsody and The Favourite</div>
+          <div class="v-hl">Social media lead on Bohemian Rhapsody and The Favourite</div>
           <div class="v-hl">Conceptualised and launched DIFFpix at Dublin International Film Festival</div>
           <div class="v-hl">Premiere events, press junkets, talent handling, red carpet coordination</div>
           <div class="v-hl">Advertising budgets managed up to six figures across Irish market</div>
         </div>
         <img src="diffpix.jpeg" alt="DIFFpix at the Dublin International Film Festival" class="diffpix-img">
+        <div class="film-collage" style="margin-top:1rem">
+          <img src="working_event.jpeg" alt="On the ground at a film event" style="height:70px;opacity:0.6">
+          <img src="daddyshome_latelate.jpg" alt="Daddy's Home 2 Irish press" style="height:70px;opacity:0.6">
+        </div>
       </div>
       <div class="v-card" style="transition-delay:0.1s">
         <div class="v-sector">Education</div>
+        <img src="kh_logo.png" alt="The King's Hospital School" style="height:28px;width:auto;opacity:0.45;filter:brightness(0) invert(1);margin-bottom:0.6rem;display:block">
         <div class="v-title">The King's Hospital School</div>
-        <div class="v-desc">Full digital transformation for a 350-year-old institution — proving that deep heritage and ambitious digital strategy are not mutually exclusive. Every metric moved in the right direction within nine months.</div>
+        <div class="v-desc">Full digital transformation for a 350-year-old institution, proving that deep heritage and ambitious digital strategy are not mutually exclusive. Every metric moved in the right direction within nine months.</div>
         <div class="v-highlights">
-          <div class="v-hl">76% social media follower growth</div>
-          <div class="v-hl">89% increase in applications within nine months</div>
+          <div class="v-hl">40% social media follower growth</div>
+          <div class="v-hl">measurable increase in applications within nine months</div>
           <div class="v-hl">35% improvement in email open rates via Mailchimp migration</div>
           <div class="v-hl">Complete website UX redesign and brand refresh</div>
           <div class="v-hl">Multi-channel campaigns across SEO, email, social and video</div>
@@ -479,8 +522,10 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       </div>
       <div class="v-card" style="transition-delay:0.2s">
         <div class="v-sector">Aesthetics &amp; Beauty</div>
+        <img src="julia_roe_logo.png" alt="Julia Roe PMU" style="height:22px;width:auto;opacity:0.5;filter:brightness(0) invert(1);margin-bottom:0.6rem;display:block;max-width:160px">
         <div class="v-title">Julia Roe PMU</div>
-        <div class="v-desc">Brand and digital presence support for a specialist permanent makeup and skin treatment clinic in Dublin — demonstrating the ability to adapt tone, voice and strategy to a highly personal, trust-led B2C service sector.</div>
+        <div class="v-desc">Brand and digital presence support for a specialist permanent makeup and skin treatment clinic in Dublin, demonstrating the ability to adapt tone, voice and strategy to a highly personal, trust-led B2C service sector.</div>
+        <img src="julia_roe_website.png" alt="Julia Roe PMU website" style="width:100%;border-radius:3px;opacity:0.55;margin:0.8rem 0;object-fit:cover;height:80px;border:1px solid rgba(255,255,255,0.08)">
         <div class="v-highlights">
           <div class="v-hl"><a href="https://juliaroepmu.com" target="_blank" style="color:inherit;text-decoration:none">juliaroepmu.com</a></div>
           <div class="v-hl">Brand voice development and tone of voice guidelines</div>
@@ -491,7 +536,7 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       <div class="v-card" style="transition-delay:0.3s">
         <div class="v-sector">Technical &amp; Regulatory Writing</div>
         <div class="v-title">SaaS and Compliance Content</div>
-        <div class="v-desc">Published technical articles on payroll automation, compliance frameworks, AML obligations and identity verification regulations for SaaS platforms and professional audiences — translating legal and technical complexity into clear, actionable content.</div>
+        <div class="v-desc">Published technical articles on payroll automation, compliance frameworks, AML obligations and identity verification regulations for SaaS platforms and professional audiences, translating legal and technical complexity into clear, actionable content.</div>
         <div class="v-highlights">
           <div class="v-hl">AccountingWEB — Autumn Budget 2025 analysis</div>
           <div class="v-hl">ECCTA identity verification guidance for accountants</div>
@@ -511,47 +556,112 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
       <h2 class="section-title">Technical <em>Writing</em></h2>
       <div class="section-line"></div>
     </div>
-    <p class="writing-intro reveal">Selected published articles translating complex SaaS, regulatory and compliance topics into clear, accessible content for professional audiences.</p>
+    <p class="writing-intro reveal">Published content spanning commercial print, hybrid mail, SaaS, regulatory and compliance topics, written for professional and business audiences across Ireland, the UK and Australia. Including articles, guides, downloadable tools, interactive calculators and ongoing social media content.</p>
+    <div style="margin-bottom:2rem">
+      <p style="font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">McGowans Group &amp; McGowans Print</p>
+      <div class="writing-grid">
+        <a href="https://mcgowansprint.com/print-embellishments-foil-spot-uv-embossing-guide/" target="_blank" class="article-card reveal">
+          <div class="article-pub">McGowans Print</div>
+          <div class="article-title">The Beginner's Guide to Print Embellishments: Foil, Spot UV and Embossing</div>
+          <div class="article-topic">Technical print education · buyer guidance · SEO long-form</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://mcgowansprint.com/free-print-packaging-planning-tools/" target="_blank" class="article-card reveal" style="transition-delay:0.07s">
+          <div class="article-pub">McGowans Print</div>
+          <div class="article-title">Free Print &amp; Packaging Planning Tools to Save Time, Money and Mild Panic</div>
+          <div class="article-topic">Downloadable resources · print planning · lead generation content</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://mcgowansprint.com/christmas-packaging-roi-pos-strategy/" target="_blank" class="article-card reveal" style="transition-delay:0.14s">
+          <div class="article-pub">McGowans Print</div>
+          <div class="article-title">Christmas Packaging ROI: Why Your POS Strategy Matters More Than Ever</div>
+          <div class="article-topic">Retail strategy · interactive ROI calculator · seasonal campaign content</div>
+          <span class="article-arrow">Read Article + Calculator &#8599;</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-bottom:2rem">
+      <p style="font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Hybrid Mail Solutions</p>
+      <div class="writing-grid">
+        <a href="https://www.hybridmailsolutions.com/hybrid-mail-compliance-regulated-industries/blog/" target="_blank" class="article-card reveal">
+          <div class="article-pub">Hybrid Mail Solutions</div>
+          <div class="article-title">Hybrid Mail and Compliance: Because 'We Think It Was Posted' Is Not an Audit Trail</div>
+          <div class="article-topic">Compliance · GDPR · regulated sectors · audit trail</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://www.hybridmailsolutions.com/planning-2026-mail-campaigns/blog/" target="_blank" class="article-card reveal" style="transition-delay:0.07s">
+          <div class="article-pub">Hybrid Mail Solutions</div>
+          <div class="article-title">Planning Your 2026 Mail Campaigns: What Smart Organisations Are Doing Differently</div>
+          <div class="article-topic">Mail strategy · campaign planning · B2B communications</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://www.hybridmailsolutions.com/7-ways-hybrid-mail-services-cut-costs-and-save-admin-time/blog/" target="_blank" class="article-card reveal" style="transition-delay:0.14s">
+          <div class="article-pub">Hybrid Mail Solutions</div>
+          <div class="article-title">7 Ways Hybrid Mail Services Cut Costs and Save Admin Time</div>
+          <div class="article-topic">Cost reduction · operational efficiency · hybrid mail services</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-bottom:2rem">
+      <p style="font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Bright Software Group &amp; AccountingWEB</p>
+      <div class="writing-grid">
+        <a href="https://brightsg.com/en-ie/blog/brightpay-payroll-software-innov" target="_blank" class="article-card reveal">
+          <div class="article-pub">BrightSG.com</div>
+          <div class="article-title">BrightPay payroll software innovation: shaping the future of payroll and accounting in 2026</div>
+          <div class="article-topic">Payroll automation · cloud compliance · SaaS product content</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://brightsg.com/blog/eccta-identity-verification-inform-direct" target="_blank" class="article-card reveal" style="transition-delay:0.07s">
+          <div class="article-pub">BrightSG.com</div>
+          <div class="article-title">ECCTA identity verification: Why Inform Direct matters</div>
+          <div class="article-topic">Regulatory compliance · company secretarial · identity verification</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+        <a href="https://accountingweb.co.uk/community/industry-insights" target="_blank" class="article-card reveal" style="transition-delay:0.14s">
+          <div class="article-pub">AccountingWEB</div>
+          <div class="article-title">Autumn Budget 2025: What accountants and payroll professionals need to know</div>
+          <div class="article-topic">UK Budget · payroll tax changes · accountancy sector</div>
+          <span class="article-arrow">Read Article &#8599;</span>
+        </a>
+      </div>
+    </div>
+
     <div class="writing-grid">
-      <a href="https://brightsg.com/en-ie/blog/brightpay-payroll-software-innov" target="_blank" class="article-card reveal">
-        <div class="article-pub">BrightSG.com</div>
-        <div class="article-title">BrightPay payroll software innovation: shaping the future of payroll and accounting in 2026</div>
-        <div class="article-topic">Payroll automation · cloud compliance · SaaS product content</div>
-        <span class="article-arrow">Read Article &#8599;</span>
-      </a>
-      <a href="https://brightsg.com/en-ie/blog/brightpay-cloud-payroll-software" target="_blank" class="article-card reveal" style="transition-delay:0.07s">
-        <div class="article-pub">BrightSG.com</div>
-        <div class="article-title">BrightPay cloud payroll software Ireland: compliance and auto-enrolment companion</div>
-        <div class="article-topic">Cloud payroll · auto-enrolment · Irish compliance</div>
-        <span class="article-arrow">Read Article &#8599;</span>
-      </a>
-      <a href="https://brightsg.com/blog/eccta-identity-verification-inform-direct" target="_blank" class="article-card reveal" style="transition-delay:0.14s">
-        <div class="article-pub">BrightSG.com</div>
-        <div class="article-title">ECCTA identity verification: Why Inform Direct matters</div>
-        <div class="article-topic">Regulatory compliance · company secretarial · identity verification</div>
-        <span class="article-arrow">Read Article &#8599;</span>
-      </a>
-      <a href="https://brightsg.com/blog/acsp-aml-obligations-accountants-202" target="_blank" class="article-card reveal" style="transition-delay:0.07s">
-        <div class="article-pub">BrightSG.com</div>
-        <div class="article-title">ACSP AML obligations for accountants: 2025 compliance guide</div>
-        <div class="article-topic">Anti-money laundering · regulatory frameworks · accountancy</div>
-        <span class="article-arrow">Read Article &#8599;</span>
-      </a>
-      <a href="https://accountingweb.co.uk/community/industry-insights" target="_blank" class="article-card reveal" style="transition-delay:0.14s">
-        <div class="article-pub">AccountingWEB</div>
-        <div class="article-title">Autumn Budget 2025: What accountants and payroll professionals need to know</div>
-        <div class="article-topic">UK Budget · payroll tax changes · accountancy sector</div>
-        <span class="article-arrow">Read Article &#8599;</span>
-      </a>
-      <div class="article-card reveal" style="transition-delay:0.21s;cursor:default;background:var(--cream);border-style:dashed">
-        <div class="article-pub">Content Specialisms</div>
-        <div class="article-title" style="font-family:'Outfit',sans-serif;font-size:0.88rem;color:var(--muted);font-weight:400;margin-bottom:0">Technical writing across SaaS, compliance and regulatory topics for professional and business audiences.</div>
-        <div class="specialism-row" style="border:none;padding:0.9rem 0 0">
-          <span class="spec-tag"><span class="spec-dot"></span>SaaS Documentation</span>
-          <span class="spec-tag"><span class="spec-dot"></span>Regulatory Content</span>
+      <div class="article-card reveal" style="cursor:default;background:var(--cream);border-style:dashed">
+        <div class="article-pub">Beyond Articles</div>
+        <div class="article-title" style="font-family:'Outfit',sans-serif;font-size:0.88rem;color:var(--muted);font-weight:400;margin-bottom:0.5rem">Content created across all formats, not just long-form articles.</div>
+        <div class="specialism-row" style="border:none;padding:0.5rem 0 0">
+          <span class="spec-tag"><span class="spec-dot"></span>Downloadable Guides</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Interactive Calculators</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Social Media Copy</span>
+          <span class="spec-tag"><span class="spec-dot"></span>UX &amp; Web Copy</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Email Campaigns</span>
           <span class="spec-tag"><span class="spec-dot"></span>Product Messaging</span>
-          <span class="spec-tag"><span class="spec-dot"></span>SEO Long-form</span>
-          <span class="spec-tag"><span class="spec-dot"></span>UX Copy</span>
+        </div>
+      </div>
+      <div class="article-card reveal" style="transition-delay:0.07s;cursor:default;background:var(--cream);border-style:dashed">
+        <div class="article-pub">Social Media Management</div>
+        <div class="article-title" style="font-family:'Outfit',sans-serif;font-size:0.88rem;color:var(--muted);font-weight:400;margin-bottom:0.5rem">Ongoing social media strategy, copy and content management across client accounts.</div>
+        <div class="specialism-row" style="border:none;padding:0.5rem 0 0">
+          <span class="spec-tag"><span class="spec-dot"></span>McGowans Print</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Hybrid Mail Solutions</span>
+          <span class="spec-tag"><span class="spec-dot"></span>LinkedIn Strategy</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Instagram</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Facebook</span>
+        </div>
+      </div>
+      <div class="article-card reveal" style="transition-delay:0.14s;cursor:default;background:var(--cream);border-style:dashed">
+        <div class="article-pub">Content Specialisms</div>
+        <div class="article-title" style="font-family:'Outfit',sans-serif;font-size:0.88rem;color:var(--muted);font-weight:400;margin-bottom:0.5rem">Technical and strategic writing across commercial print, SaaS, compliance and regulated sectors.</div>
+        <div class="specialism-row" style="border:none;padding:0.5rem 0 0">
+          <span class="spec-tag"><span class="spec-dot"></span>Brand Strategy Docs</span>
+          <span class="spec-tag"><span class="spec-dot"></span>CEO Presentations</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Developer Briefs</span>
+          <span class="spec-tag"><span class="spec-dot"></span>SEO · AEO · GEO</span>
+          <span class="spec-tag"><span class="spec-dot"></span>Regulatory Content</span>
         </div>
       </div>
     </div>
@@ -584,12 +694,12 @@ footer p{font-size:0.72rem;color:rgba(247,243,237,0.22);letter-spacing:0.04em}
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="position:relative"><div style="position:absolute;inset:0;background-image:url('sunrise_swim.JPG');background-size:cover;background-position:center;opacity:0.06;z-index:0"></div>
   <div class="section-inner">
     <div class="contact-inner reveal">
       <p class="contact-eyebrow">Open to new opportunities</p>
       <h2 class="contact-heading">Let's build something<br><em>remarkable</em> together.</h2>
-      <p class="contact-sub">Whether you are looking for a marketing and communications leader, an AI strategy consultant, a brand builder or a technical content specialist — I would love to hear from you.</p>
+      <p class="contact-sub">Whether you are looking for a marketing and communications leader, an AI strategy consultant, a brand builder or a technical content specialist. I would love to hear from you.</p>
       <div class="contact-links">
         <a href="mailto:nicky.costello@gmail.com" class="contact-link contact-link-primary">nicky.costello@gmail.com</a>
         <a href="https://www.linkedin.com/in/nicolacostello" target="_blank" class="contact-link contact-link-secondary">LinkedIn Profile &#8599;</a>
